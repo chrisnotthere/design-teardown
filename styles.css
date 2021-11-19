@@ -1,0 +1,121 @@
+/* ========================================================================================
+        reset - https://www.digitalocean.com/community/tutorials/css-minimal-css-reset
+=========================================================================================== */
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: sans-serif;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+  }
+  
+  ol, ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /*  */
+  :root{
+    --red: #d33a2c;
+    --red-hover: #a5382e;
+    /* --white: #ffffff; */
+      
+  }
+
+
+/* ========================================================================================
+        header
+=========================================================================================== */
+
+.header1 {
+    background: var(--red);
+}
+
+.nav1-links {
+    display: flex;
+    align-items: center;
+    margin-left: 1em;
+    /* margin-bottom: 1em; */
+    /* gap: 0.5em; */
+}
+
+.nav1-links li{
+    color: white;
+    margin-right: 0.75em;
+    font-weight: 700;
+    font-size: 1.25rem;
+    /* background-color: violet; */
+    padding: 0.75em;
+    border-radius: 0.5em;
+    margin-top: -1em;
+}
+
+.nav1-links li:hover{
+    background-color: var(--red-hover);
+}
+
+.nav1 {
+    display: flex;
+    padding: 1.75em 0 0 2em;
+}
+
+.logo-small {
+    display: none;
+}
+
+.logo-full {
+    min-width: 200px;
+}
+
+
+.more-li {
+    /* margin-right: 1em; */
+    background-color: var(--red-hover);
+    position: relative;
+    display: flex;
+    padding-right: 2em!important;
+
+}
+
+.more-icon {
+    position: absolute;
+    top: 0.5em;
+    right: 0.25em;
+    width: 30px;
+    height: 30px;
+}
+
+.search-articles {
+    margin-top: -0.25em;
+    margin-left: 0.5em;
+    position: relative;
+}
+
+.search-articles input {
+    padding: 0.75em 0 0.75em 2em;
+    border-radius: 1em;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    width: 300px;
+}
+
+.search-icon {
+    position: absolute;
+    left: 0.75em;
+    top: 1em;
+
+}
