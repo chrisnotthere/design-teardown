@@ -49,7 +49,6 @@ header {
   --red: #d33a2c;
   --red-hover: #a5382e;
   --red-pale: #ffe7e7;
-
   --blue: #006fc6;
   --light-blue: #e7f8ff;
 
@@ -57,6 +56,12 @@ header {
   --grey: #5c5a5a;
   --black: #333;
 
+  --card-green: #18a46f;
+  --card-green-light: #d6ebe3;
+  --card-orange: #f55700;
+  --card-orange-light: #eeded6;
+  --card-purple: #aa1994;
+  --card-purple-light: #f1d8ee;
 }
 
 /* ========================================================================================
@@ -438,8 +443,157 @@ main {
   text-decoration: underline;
 }
 
+/* ========================================================================================
+        cards
+=========================================================================================== */
+
+.content-bottom {
+/* background-color: yellow; */
+display: flex;
+justify-content: center;
+gap: 2em;
+padding: 1em 11em;
+margin-top: 2em;
+}
+
+.card {
+  /* background-color: violet; */
+  /* color: red; */
+  /* width: 200px; */
+  padding: 2.5em;
+  border-radius: 0.75em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+  box-shadow: rgba(0, 0, 0, 0.35) 2px 20px 15px;
+
+}
+
+.card1 span {
+  background-color: var(--light-grey);
+}
+
+.card1 h4{
+  color: var(--card-green);
+}
+
+.card1 {
+  background-color: var(--card-green-light);
+}
+
+.card1 .card-btn {
+  background-color: var(--card-green);
+}
+
+
+.card2 h4{
+  color: var(--card-orange);
+}
+
+.card2 {
+  background-color: var(--card-orange-light);
+}
+
+.card2 .card-btn {
+  background-color: var(--card-orange);
+}
+
+.card3 h4{
+  color: var(--card-purple);
+}
+
+.card3 {
+  background-color: var(--card-purple-light);
+}
+
+.card3 .card-btn {
+  background-color: var(--card-purple);
+}
+
+
+
+
+
+
+.card h4 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 3rem;
+  text-decoration: underline;
+  margin-bottom: 1em;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+.card p {
+  font-size: 1.4rem;
+  line-height: 2.25rem;
+  margin-bottom: 1em;
+
+
+}
+
+.card-btn {
+/* background-color: var(--blue); */
+text-align: center;
+padding: 1em 1em;
+border-radius: 0.5em;
+font-size: 1.75rem;
+font-weight: 700;
+color: white;
+cursor: pointer;
+}
+
+.see-all {
+  /* background-color: yellow; */
+  width: 200px;
+  margin: 4em auto;
+  cursor: pointer;
+  border-bottom: 8px solid var(--red);
+  text-align: center;
+  padding: 0.5em;
+  font-family: serif;
+  font-size: 1.2rem;
+}
+
+.see-all p:hover {
+color: var(--red);}
 
 
 /* ========================================================================================
-        footer
+comment
 =========================================================================================== */
+
+
+
+
+/* ========================================================================================
+footer
+=========================================================================================== */
+
+footer {
+
+}
+
+.footer-top {
+
+
+}
+
+
+.footer-top-links {
+
+
+}
+
+
+.footer-bottom {
+
+}
