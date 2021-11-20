@@ -39,6 +39,10 @@ img {
   height: auto;
 }
 
+header {
+    white-space: nowrap;
+}
+
 /*  */
 :root {
   --red: #d33a2c;
